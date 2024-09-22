@@ -1,4 +1,4 @@
-  name: My second workflow 
+name: My second workflow 
 on: push
 jobs:
   firstjob:
