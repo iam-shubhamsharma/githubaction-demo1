@@ -22,4 +22,5 @@ jobs:
           echo "This is job1"
           whoami
           sudo su -
-          apg-get update -y
+          whoami
+          sudo apt-get update -y
