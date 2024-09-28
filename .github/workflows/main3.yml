@@ -1,0 +1,21 @@
+name: My Third workflow 
+on: push
+jobs:
+  firstjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greetings!
+        run: echo "Hello Everyone"
+  secondjob:
+    runs-on: ubuntu-latest 
+    steps: 
+      - name: Run multiple commands 
+        run: |
+          echo "Hello Github"
+          echo "This is job1"
+  thirdjob:
+    -name: update packages
+    runs-on: ubuntu-latest
+    run : |
+      sudo su -i
+      apt-get update -y
