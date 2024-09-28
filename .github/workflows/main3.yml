@@ -14,8 +14,12 @@ jobs:
           echo "Hello Github"
           echo "This is job1"
   thirdjob:
-    -name: update packages
-    runs-on: ubuntu-latest
-    run : |
-      sudo su -i
-      apt-get update -y
+    runs-on: ubuntu-latest 
+    steps: 
+      - name: Update packages
+        run: |
+          echo "Hello Github"
+          echo "This is job1"
+          whoami
+          sudo su -i
+          apg-get update -y
